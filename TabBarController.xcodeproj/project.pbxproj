@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2677DCF1E654644006A8274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DCE1E654644006A8274 /* main.m */; };
+		B2677DD21E654644006A8274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DD11E654644006A8274 /* AppDelegate.m */; };
+		B2677DD81E654644006A8274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2677DD61E654644006A8274 /* Main.storyboard */; };
+		B2677DDA1E654644006A8274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2677DD91E654644006A8274 /* Assets.xcassets */; };
+		B2677DDD1E654644006A8274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2677DDB1E654644006A8274 /* LaunchScreen.storyboard */; };
+		B2677DE81E654644006A8274 /* TabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DE71E654644006A8274 /* TabBarControllerTests.m */; };
+		B2677DF81E6546C5006A8274 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF31E6546C5006A8274 /* HomeViewController.m */; };
+		B2677DF91E6546C5006A8274 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF51E6546C5006A8274 /* SetViewController.m */; };
+		B2677DFA1E6546C5006A8274 /* ZHLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */; };
+		B2C65DF81E66985200D78AC4 /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2C65DF71E66985200D78AC4 /* CityData.plist */; };
+		B2F679C91E664F00006A71F1 /* QMUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F679C81E664EEA006A71F1 /* QMUIKit.framework */; };
+		B2F679E91E665730006A71F1 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D21E665730006A71F1 /* QMUIConfigurationTemplate.m */; };
+		B2F679EA1E665730006A71F1 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D51E665730006A71F1 /* QDCommonGridViewController.m */; };
+		B2F679EB1E665730006A71F1 /* QDCommonGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D71E665730006A71F1 /* QDCommonGroupListViewController.m */; };
+		B2F679EC1E665730006A71F1 /* QDCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D91E665730006A71F1 /* QDCommonListViewController.m */; };
+		B2F679ED1E665730006A71F1 /* QDCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679DB1E665730006A71F1 /* QDCommonTableViewController.m */; };
+		B2F679EE1E665730006A71F1 /* QDCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679DD1E665730006A71F1 /* QDCommonViewController.m */; };
+		B2F679EF1E665730006A71F1 /* QDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679DF1E665730006A71F1 /* QDNavigationController.m */; };
+		B2F679F01E665730006A71F1 /* QDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679E11E665730006A71F1 /* QDTabBarViewController.m */; };
+		B2F679F11E665730006A71F1 /* QDCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679E41E665730006A71F1 /* QDCommonUI.m */; };
+		B2F679F21E665730006A71F1 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679E61E665730006A71F1 /* QDUIHelper.m */; };
+		B2F679F31E665730006A71F1 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679E81E665730006A71F1 /* UIImageEffects.m */; };
+		B2F679F71E66642B006A71F1 /* QDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679F61E66642B006A71F1 /* QDSearchViewController.m */; };
+		B2F679FA1E666597006A71F1 /* QDCityList.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679F91E666597006A71F1 /* QDCityList.m */; };
+		B2F679FD1E6666F8006A71F1 /* QDCityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679FC1E6666F8006A71F1 /* QDCityGroup.m */; };
+		B2F67A001E666745006A71F1 /* QDCityModle.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679FF1E666745006A71F1 /* QDCityModle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2677DE41E654644006A8274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2677DC21E654644006A8274 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2677DC91E654644006A8274;
+			remoteInfo = TabBarController;
+		};
+		B2F679C51E664EEA006A71F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16E46D4A1B00D8C2002B7DB8;
+			remoteInfo = QMUI;
+		};
+		B2F679C71E664EEA006A71F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE0AFAD11D82B9D8000D21D9;
+			remoteInfo = QMUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2677DCA1E654644006A8274 /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2677DCE1E654644006A8274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2677DD01E654644006A8274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2677DD11E654644006A8274 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2677DD71E654644006A8274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2677DD91E654644006A8274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2677DDC1E654644006A8274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2677DDE1E654644006A8274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2677DE31E654644006A8274 /* TabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2677DE71E654644006A8274 /* TabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerTests.m; sourceTree = "<group>"; };
+		B2677DE91E654644006A8274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2677DF21E6546C5006A8274 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B2677DF31E6546C5006A8274 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B2677DF41E6546C5006A8274 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		B2677DF51E6546C5006A8274 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		B2677DF61E6546C5006A8274 /* ZHLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHLTabBarController.h; sourceTree = "<group>"; };
+		B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHLTabBarController.m; sourceTree = "<group>"; };
+		B2677DFB1E6546F4006A8274 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2C65DF71E66985200D78AC4 /* CityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityData.plist; sourceTree = "<group>"; };
+		B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = qmui.xcodeproj; path = QMUI/qmui.xcodeproj; sourceTree = "<group>"; };
+		B2F679D11E665730006A71F1 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		B2F679D21E665730006A71F1 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		B2F679D41E665730006A71F1 /* QDCommonGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGridViewController.h; sourceTree = "<group>"; };
+		B2F679D51E665730006A71F1 /* QDCommonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGridViewController.m; sourceTree = "<group>"; };
+		B2F679D61E665730006A71F1 /* QDCommonGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGroupListViewController.h; sourceTree = "<group>"; };
+		B2F679D71E665730006A71F1 /* QDCommonGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGroupListViewController.m; sourceTree = "<group>"; };
+		B2F679D81E665730006A71F1 /* QDCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonListViewController.h; sourceTree = "<group>"; };
+		B2F679D91E665730006A71F1 /* QDCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonListViewController.m; sourceTree = "<group>"; };
+		B2F679DA1E665730006A71F1 /* QDCommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonTableViewController.h; sourceTree = "<group>"; };
+		B2F679DB1E665730006A71F1 /* QDCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonTableViewController.m; sourceTree = "<group>"; };
+		B2F679DC1E665730006A71F1 /* QDCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonViewController.h; sourceTree = "<group>"; };
+		B2F679DD1E665730006A71F1 /* QDCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonViewController.m; sourceTree = "<group>"; };
+		B2F679DE1E665730006A71F1 /* QDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationController.h; sourceTree = "<group>"; };
+		B2F679DF1E665730006A71F1 /* QDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationController.m; sourceTree = "<group>"; };
+		B2F679E01E665730006A71F1 /* QDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarViewController.h; sourceTree = "<group>"; };
+		B2F679E11E665730006A71F1 /* QDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarViewController.m; sourceTree = "<group>"; };
+		B2F679E31E665730006A71F1 /* QDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonUI.h; sourceTree = "<group>"; };
+		B2F679E41E665730006A71F1 /* QDCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonUI.m; sourceTree = "<group>"; };
+		B2F679E51E665730006A71F1 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
+		B2F679E61E665730006A71F1 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
+		B2F679E71E665730006A71F1 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		B2F679E81E665730006A71F1 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		B2F679F51E66642B006A71F1 /* QDSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSearchViewController.h; sourceTree = "<group>"; };
+		B2F679F61E66642B006A71F1 /* QDSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSearchViewController.m; sourceTree = "<group>"; };
+		B2F679F81E666597006A71F1 /* QDCityList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCityList.h; sourceTree = "<group>"; };
+		B2F679F91E666597006A71F1 /* QDCityList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCityList.m; sourceTree = "<group>"; };
+		B2F679FB1E6666F8006A71F1 /* QDCityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCityGroup.h; sourceTree = "<group>"; };
+		B2F679FC1E6666F8006A71F1 /* QDCityGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCityGroup.m; sourceTree = "<group>"; };
+		B2F679FE1E666745006A71F1 /* QDCityModle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCityModle.h; sourceTree = "<group>"; };
+		B2F679FF1E666745006A71F1 /* QDCityModle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCityModle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2677DC71E654644006A8274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F679C91E664F00006A71F1 /* QMUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2677DE01E654644006A8274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2677DC11E654644006A8274 = {
+			isa = PBXGroup;
+			children = (
+				B2677DCC1E654644006A8274 /* TabBarController */,
+				B2677DE61E654644006A8274 /* TabBarControllerTests */,
+				B2677DCB1E654644006A8274 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2677DCB1E654644006A8274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2677DCA1E654644006A8274 /* TabBarController.app */,
+				B2677DE31E654644006A8274 /* TabBarControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2677DCC1E654644006A8274 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679F41E666421006A71F1 /* CityListSearch */,
+				B2677DFC1E65479A006A8274 /* Lib */,
+				B2677DD01E654644006A8274 /* AppDelegate.h */,
+				B2677DD11E654644006A8274 /* AppDelegate.m */,
+				B2677DF61E6546C5006A8274 /* ZHLTabBarController.h */,
+				B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */,
+				B2677DF21E6546C5006A8274 /* HomeViewController.h */,
+				B2677DF31E6546C5006A8274 /* HomeViewController.m */,
+				B2677DF41E6546C5006A8274 /* SetViewController.h */,
+				B2677DF51E6546C5006A8274 /* SetViewController.m */,
+				B2677DD61E654644006A8274 /* Main.storyboard */,
+				B2677DD91E654644006A8274 /* Assets.xcassets */,
+				B2677DDB1E654644006A8274 /* LaunchScreen.storyboard */,
+				B2677DDE1E654644006A8274 /* Info.plist */,
+				B2677DCD1E654644006A8274 /* Supporting Files */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		B2677DCD1E654644006A8274 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2677DFB1E6546F4006A8274 /* PrefixHeader.pch */,
+				B2677DCE1E654644006A8274 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2677DE61E654644006A8274 /* TabBarControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2677DE71E654644006A8274 /* TabBarControllerTests.m */,
+				B2677DE91E654644006A8274 /* Info.plist */,
+			);
+			path = TabBarControllerTests;
+			sourceTree = "<group>";
+		};
+		B2677DFC1E65479A006A8274 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679CF1E665730006A71F1 /* Common */,
+				B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B2F679C11E664EE9006A71F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679C61E664EEA006A71F1 /* libQMUI.a */,
+				B2F679C81E664EEA006A71F1 /* QMUIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F679CF1E665730006A71F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679D01E665730006A71F1 /* Configuration */,
+				B2F679D31E665730006A71F1 /* Controllers */,
+				B2F679E21E665730006A71F1 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B2F679D01E665730006A71F1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679D11E665730006A71F1 /* QMUIConfigurationTemplate.h */,
+				B2F679D21E665730006A71F1 /* QMUIConfigurationTemplate.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B2F679D31E665730006A71F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679D41E665730006A71F1 /* QDCommonGridViewController.h */,
+				B2F679D51E665730006A71F1 /* QDCommonGridViewController.m */,
+				B2F679D61E665730006A71F1 /* QDCommonGroupListViewController.h */,
+				B2F679D71E665730006A71F1 /* QDCommonGroupListViewController.m */,
+				B2F679D81E665730006A71F1 /* QDCommonListViewController.h */,
+				B2F679D91E665730006A71F1 /* QDCommonListViewController.m */,
+				B2F679DA1E665730006A71F1 /* QDCommonTableViewController.h */,
+				B2F679DB1E665730006A71F1 /* QDCommonTableViewController.m */,
+				B2F679DC1E665730006A71F1 /* QDCommonViewController.h */,
+				B2F679DD1E665730006A71F1 /* QDCommonViewController.m */,
+				B2F679DE1E665730006A71F1 /* QDNavigationController.h */,
+				B2F679DF1E665730006A71F1 /* QDNavigationController.m */,
+				B2F679E01E665730006A71F1 /* QDTabBarViewController.h */,
+				B2F679E11E665730006A71F1 /* QDTabBarViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2F679E21E665730006A71F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679E31E665730006A71F1 /* QDCommonUI.h */,
+				B2F679E41E665730006A71F1 /* QDCommonUI.m */,
+				B2F679E51E665730006A71F1 /* QDUIHelper.h */,
+				B2F679E61E665730006A71F1 /* QDUIHelper.m */,
+				B2F679E71E665730006A71F1 /* UIImageEffects.h */,
+				B2F679E81E665730006A71F1 /* UIImageEffects.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B2F679F41E666421006A71F1 /* CityListSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B2F679F51E66642B006A71F1 /* QDSearchViewController.h */,
+				B2F679F61E66642B006A71F1 /* QDSearchViewController.m */,
+				B2F679F81E666597006A71F1 /* QDCityList.h */,
+				B2F679F91E666597006A71F1 /* QDCityList.m */,
+				B2F679FB1E6666F8006A71F1 /* QDCityGroup.h */,
+				B2F679FC1E6666F8006A71F1 /* QDCityGroup.m */,
+				B2F679FE1E666745006A71F1 /* QDCityModle.h */,
+				B2F679FF1E666745006A71F1 /* QDCityModle.m */,
+				B2C65DF71E66985200D78AC4 /* CityData.plist */,
+			);
+			path = CityListSearch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2677DC91E654644006A8274 /* TabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2677DEC1E654644006A8274 /* Build configuration list for PBXNativeTarget "TabBarController" */;
+			buildPhases = (
+				B2677DC61E654644006A8274 /* Sources */,
+				B2677DC71E654644006A8274 /* Frameworks */,
+				B2677DC81E654644006A8274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBarController;
+			productName = TabBarController;
+			productReference = B2677DCA1E654644006A8274 /* TabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2677DE21E654644006A8274 /* TabBarControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2677DEF1E654644006A8274 /* Build configuration list for PBXNativeTarget "TabBarControllerTests" */;
+			buildPhases = (
+				B2677DDF1E654644006A8274 /* Sources */,
+				B2677DE01E654644006A8274 /* Frameworks */,
+				B2677DE11E654644006A8274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2677DE51E654644006A8274 /* PBXTargetDependency */,
+			);
+			name = TabBarControllerTests;
+			productName = TabBarControllerTests;
+			productReference = B2677DE31E654644006A8274 /* TabBarControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2677DC21E654644006A8274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ZHL;
+				TargetAttributes = {
+					B2677DC91E654644006A8274 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					B2677DE21E654644006A8274 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D76EKZMNTP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B2677DC91E654644006A8274;
+					};
+				};
+			};
+			buildConfigurationList = B2677DC51E654644006A8274 /* Build configuration list for PBXProject "TabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2677DC11E654644006A8274;
+			productRefGroup = B2677DCB1E654644006A8274 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2F679C11E664EE9006A71F1 /* Products */;
+					ProjectRef = B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B2677DC91E654644006A8274 /* TabBarController */,
+				B2677DE21E654644006A8274 /* TabBarControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B2F679C61E664EEA006A71F1 /* libQMUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQMUI.a;
+			remoteRef = B2F679C51E664EEA006A71F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2F679C81E664EEA006A71F1 /* QMUIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QMUIKit.framework;
+			remoteRef = B2F679C71E664EEA006A71F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2677DC81E654644006A8274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2677DDD1E654644006A8274 /* LaunchScreen.storyboard in Resources */,
+				B2677DDA1E654644006A8274 /* Assets.xcassets in Resources */,
+				B2677DD81E654644006A8274 /* Main.storyboard in Resources */,
+				B2C65DF81E66985200D78AC4 /* CityData.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2677DE11E654644006A8274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2677DC61E654644006A8274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F679F01E665730006A71F1 /* QDTabBarViewController.m in Sources */,
+				B2F679EC1E665730006A71F1 /* QDCommonListViewController.m in Sources */,
+				B2F679ED1E665730006A71F1 /* QDCommonTableViewController.m in Sources */,
+				B2677DFA1E6546C5006A8274 /* ZHLTabBarController.m in Sources */,
+				B2677DD21E654644006A8274 /* AppDelegate.m in Sources */,
+				B2F679E91E665730006A71F1 /* QMUIConfigurationTemplate.m in Sources */,
+				B2F67A001E666745006A71F1 /* QDCityModle.m in Sources */,
+				B2F679EA1E665730006A71F1 /* QDCommonGridViewController.m in Sources */,
+				B2F679F31E665730006A71F1 /* UIImageEffects.m in Sources */,
+				B2F679F21E665730006A71F1 /* QDUIHelper.m in Sources */,
+				B2F679EB1E665730006A71F1 /* QDCommonGroupListViewController.m in Sources */,
+				B2677DCF1E654644006A8274 /* main.m in Sources */,
+				B2F679FA1E666597006A71F1 /* QDCityList.m in Sources */,
+				B2F679FD1E6666F8006A71F1 /* QDCityGroup.m in Sources */,
+				B2F679F11E665730006A71F1 /* QDCommonUI.m in Sources */,
+				B2677DF91E6546C5006A8274 /* SetViewController.m in Sources */,
+				B2F679EF1E665730006A71F1 /* QDNavigationController.m in Sources */,
+				B2F679EE1E665730006A71F1 /* QDCommonViewController.m in Sources */,
+				B2677DF81E6546C5006A8274 /* HomeViewController.m in Sources */,
+				B2F679F71E66642B006A71F1 /* QDSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2677DDF1E654644006A8274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2677DE81E654644006A8274 /* TabBarControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2677DE51E654644006A8274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2677DC91E654644006A8274 /* TabBarController */;
+			targetProxy = B2677DE41E654644006A8274 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2677DD61E654644006A8274 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2677DD71E654644006A8274 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2677DDB1E654644006A8274 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2677DDC1E654644006A8274 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2677DEA1E654644006A8274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2677DEB1E654644006A8274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2677DED1E654644006A8274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBarController/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TabBarController/Lib/QMUI/**";
+				INFOPLIST_FILE = TabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2677DEE1E654644006A8274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBarController/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TabBarController/Lib/QMUI/**";
+				INFOPLIST_FILE = TabBarController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2677DF01E654644006A8274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D76EKZMNTP;
+				INFOPLIST_FILE = TabBarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
+			};
+			name = Debug;
+		};
+		B2677DF11E654644006A8274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D76EKZMNTP;
+				INFOPLIST_FILE = TabBarControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2677DC51E654644006A8274 /* Build configuration list for PBXProject "TabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2677DEA1E654644006A8274 /* Debug */,
+				B2677DEB1E654644006A8274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2677DEC1E654644006A8274 /* Build configuration list for PBXNativeTarget "TabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2677DED1E654644006A8274 /* Debug */,
+				B2677DEE1E654644006A8274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2677DEF1E654644006A8274 /* Build configuration list for PBXNativeTarget "TabBarControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2677DF01E654644006A8274 /* Debug */,
+				B2677DF11E654644006A8274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2677DC21E654644006A8274 /* Project object */;
+}
