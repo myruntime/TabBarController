@@ -18,6 +18,7 @@
 		B2677DFA1E6546C5006A8274 /* ZHLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */; };
 		B2B79FC11E6CF9D200D11988 /* DSectionIndexItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */; };
 		B2B79FC21E6CF9D200D11988 /* DSectionIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B79FC01E6CF9D200D11988 /* DSectionIndexView.m */; };
+		B2B79FC81E6D3D7900D11988 /* 示例.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2B79FC71E6D3D7900D11988 /* 示例.gif */; };
 		B2C65DF81E66985200D78AC4 /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2C65DF71E66985200D78AC4 /* CityData.plist */; };
 		B2C65DFF1E67CAE000D78AC4 /* QMUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F679C81E664EEA006A71F1 /* QMUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2F679C91E664F00006A71F1 /* QMUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F679C81E664EEA006A71F1 /* QMUIKit.framework */; };
@@ -106,6 +107,7 @@
 		B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSectionIndexItemView.m; sourceTree = "<group>"; };
 		B2B79FBF1E6CF9D200D11988 /* DSectionIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSectionIndexView.h; sourceTree = "<group>"; };
 		B2B79FC01E6CF9D200D11988 /* DSectionIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSectionIndexView.m; sourceTree = "<group>"; };
+		B2B79FC71E6D3D7900D11988 /* 示例.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "示例.gif"; sourceTree = "<group>"; };
 		B2C65DF71E66985200D78AC4 /* CityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityData.plist; sourceTree = "<group>"; };
 		B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = qmui.xcodeproj; path = QMUI/qmui.xcodeproj; sourceTree = "<group>"; };
 		B2F679D11E665730006A71F1 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		B2677DCC1E654644006A8274 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				B2B79FC51E6D3D5A00D11988 /* gif */,
 				B2B79FBC1E6CF9D200D11988 /* IndexView */,
 				B2F679F41E666421006A71F1 /* CityListSearch */,
 				B2677DFC1E65479A006A8274 /* Lib */,
@@ -236,6 +239,14 @@
 				B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */,
 			);
 			path = IndexView;
+			sourceTree = "<group>";
+		};
+		B2B79FC51E6D3D5A00D11988 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				B2B79FC71E6D3D7900D11988 /* 示例.gif */,
+			);
+			path = gif;
 			sourceTree = "<group>";
 		};
 		B2F679C11E664EE9006A71F1 /* Products */ = {
@@ -425,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B79FC81E6D3D7900D11988 /* 示例.gif in Resources */,
 				B2677DDD1E654644006A8274 /* LaunchScreen.storyboard in Resources */,
 				B2677DDA1E654644006A8274 /* Assets.xcassets in Resources */,
 				B2677DD81E654644006A8274 /* Main.storyboard in Resources */,
