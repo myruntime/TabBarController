@@ -16,6 +16,7 @@
 @implementation QDUIHelper (QMUIMoreOperationAppearance)
 
 + (void)customMoreOperationAppearance {
+
     // 如果需要统一修改全局的 QMUIMoreOperationController 样式，在这里修改 appearance 的值即可
 }
 

@@ -15,7 +15,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface QDSearchViewController ()<QMUISearchControllerDelegate,CLLocationManagerDelegate>
+#import "DSectionIndexView.h"
+#import "DSectionIndexItemView.h"
+
+
+@interface QDSearchViewController ()<QMUISearchControllerDelegate,CLLocationManagerDelegate,DSectionIndexViewDataSource,DSectionIndexViewDelegate>
 
 //@property(nonatomic,strong) NSArray<NSString *> *keywords;
 
@@ -24,6 +28,14 @@
 @property(nonatomic,retain)CLLocationManager *locationManager;
 @property(nonatomic,strong) NSString *currentCity;
 
+/**
+ tableview右侧索引
+ */
+@property(nonatomic,strong) NSMutableArray *indexArray;
+/**
+ tableview右侧索引View
+ */
+@property (retain, nonatomic) DSectionIndexView *sectionIndexView;
 
 
 @property(nonatomic,strong) NSMutableArray *searchResultsKeywords;
@@ -36,6 +48,7 @@
     if (self = [super initWithStyle:style]) {
         self.cityArray = [[QDCityModle sharedObject] citiesArrary];
         self.searchResultsKeywords = [[NSMutableArray alloc] init];
+        
     }
     return self;
 }
@@ -47,7 +60,14 @@
     self.mySearchController = [[QMUISearchController alloc] initWithContentsViewController:self];
     self.mySearchController.searchResultsDelegate = self;
     self.tableView.tableHeaderView = self.mySearchController.searchBar;
+    [self initSectionIndexView];
 }
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.sectionIndexView reloadItemViews];
+}
+
 
 #pragma mark - <QMUITableViewDataSource,QMUITableViewDelegate>
 
@@ -57,7 +77,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (tableView == self.tableView) {
-        return self.cityArray.count+2;
+        return self.cityArray.count + 3;
     }
     return 1;
 }
@@ -68,9 +88,11 @@
             return 1;
         }else if (section == 1) {
             return 1;
+        }else if (section == 2) {
+            return 1;
         }else {
             //
-            QDCityGroup *group = self.cityArray[section-2];
+            QDCityGroup *group = self.cityArray[section - 3];
             return group.arrayCitys.count;
         }
         
@@ -91,8 +113,10 @@
             cell.textLabel.text = self.currentCity?self.currentCity:@"定位中...";
         }else if (indexPath.section == 1) {
             cell.textLabel.text = @"无历史";
+        }else if (indexPath.section == 2) {
+            cell.textLabel.text = @"无热门";
         }else {
-            QDCityGroup *group = self.cityArray[indexPath.section-2];
+            QDCityGroup *group = self.cityArray[indexPath.section - 3];
             QDCityList *city = group.arrayCitys[indexPath.row];
             cell.textLabel.text = city.cityName;
         }
@@ -117,8 +141,10 @@
             return @"当前城市";
         }else if (section == 1) {
             return @"历史记录";
+        }else if (section == 2) {
+            return @"热门城市";
         }else {
-            QDCityGroup *group = self.cityArray[section-2];
+            QDCityGroup *group = self.cityArray[section - 3];
             return group.groupName;
         }
     }else {
@@ -137,6 +163,111 @@
         
     }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 40;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 24.0f;
+}
+
+
+#pragma mark <IndexView>
+#define kSectionIndexWidth 30.f
+#define kSectionIndexHeight ([UIScreen mainScreen].bounds.size.height - 64)
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+- (void)initSectionIndexView {
+    // Custom initialization
+    _sectionIndexView = [[DSectionIndexView alloc] init];
+    _sectionIndexView.frame = CGRectMake(kScreenWidth - kSectionIndexWidth, 64, kSectionIndexWidth, kSectionIndexHeight);
+    _sectionIndexView.backgroundColor = [UIColor clearColor];
+    _sectionIndexView.dataSource = self;
+    _sectionIndexView.delegate = self;
+    _sectionIndexView.isShowCallout = YES;
+    _sectionIndexView.calloutViewType = CalloutViewTypeForQQMusic;
+    _sectionIndexView.calloutDirection = SectionIndexCalloutDirectionLeft;
+    _sectionIndexView.calloutMargin = 100.f;
+    [self.view addSubview:self.sectionIndexView];
+}
+
+- (NSMutableArray *)indexArray {
+    if (!_indexArray) {
+        _indexArray = [[NSMutableArray alloc] initWithObjects:@"@", @"#", @"$", @"*", nil];
+        for (QDCityGroup *group in _cityArray) {
+            [_indexArray addObject:group.groupName];
+        }
+    }
+    return _indexArray;
+}
+
+#pragma mark DSectionIndexViewDataSource && delegate method
+- (NSInteger)numberOfItemViewForSectionIndexView:(DSectionIndexView *)sectionIndexView
+{
+//    return self.tableView.numberOfSections;
+    return self.indexArray.count;
+}
+
+- (DSectionIndexItemView *)sectionIndexView:(DSectionIndexView *)sectionIndexView itemViewForSection:(NSInteger)section
+{
+    DSectionIndexItemView *itemView = [[DSectionIndexItemView alloc] init];
+    
+    itemView.titleLabel.text = [self.indexArray objectAtIndex:section];
+    itemView.titleLabel.font = [UIFont systemFontOfSize:12];
+    itemView.titleLabel.textColor = [UIColor redColor];
+    itemView.titleLabel.highlightedTextColor = [UIColor grayColor];
+    itemView.titleLabel.shadowColor = [UIColor whiteColor];
+    itemView.titleLabel.shadowOffset = CGSizeMake(0, 1);
+    return itemView;
+    
+}
+
+- (UIView *)sectionIndexView:(DSectionIndexView *)sectionIndexView calloutViewForSection:(NSInteger)section
+{
+    UILabel *label = [[UILabel alloc] init];
+    
+    label.frame = CGRectMake(0, 0, 80, 80);
+    
+    label.backgroundColor = [UIColor whiteColor];
+    label.textColor = [UIColor greenColor];
+    label.font = [UIFont boldSystemFontOfSize:36];
+    label.text = [self.indexArray objectAtIndex:section];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [label.layer setCornerRadius:label.frame.size.width/2];
+    [label.layer setBorderColor:[UIColor darkGrayColor].CGColor];
+    [label.layer setBorderWidth:3.0f];
+    [label.layer setShadowColor:[UIColor blackColor].CGColor];
+    [label.layer setShadowOpacity:0.8];
+    [label.layer setShadowRadius:5.0];
+    [label.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+
+    
+    return label;
+}
+
+- (NSString *)sectionIndexView:(DSectionIndexView *)sectionIndexView
+               titleForSection:(NSInteger)section
+{
+    return [self.indexArray objectAtIndex:section];
+}
+
+- (void)sectionIndexView:(DSectionIndexView *)sectionIndexView didSelectSection:(NSInteger)section
+{
+    if (section == 0) {
+        [self.tableView qmui_scrollToTopAnimated:YES];
+    }else {
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:section-1] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    }
+    
+}
+
+
+
+
+
+
 
 
 #pragma mark - <QMUISearchControllerDelegate>

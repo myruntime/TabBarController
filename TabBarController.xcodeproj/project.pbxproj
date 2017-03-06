@@ -16,7 +16,10 @@
 		B2677DF81E6546C5006A8274 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF31E6546C5006A8274 /* HomeViewController.m */; };
 		B2677DF91E6546C5006A8274 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF51E6546C5006A8274 /* SetViewController.m */; };
 		B2677DFA1E6546C5006A8274 /* ZHLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */; };
+		B2B79FC11E6CF9D200D11988 /* DSectionIndexItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */; };
+		B2B79FC21E6CF9D200D11988 /* DSectionIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B79FC01E6CF9D200D11988 /* DSectionIndexView.m */; };
 		B2C65DF81E66985200D78AC4 /* CityData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2C65DF71E66985200D78AC4 /* CityData.plist */; };
+		B2C65DFF1E67CAE000D78AC4 /* QMUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F679C81E664EEA006A71F1 /* QMUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2F679C91E664F00006A71F1 /* QMUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F679C81E664EEA006A71F1 /* QMUIKit.framework */; };
 		B2F679E91E665730006A71F1 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D21E665730006A71F1 /* QMUIConfigurationTemplate.m */; };
 		B2F679EA1E665730006A71F1 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F679D51E665730006A71F1 /* QDCommonGridViewController.m */; };
@@ -43,6 +46,13 @@
 			remoteGlobalIDString = B2677DC91E654644006A8274;
 			remoteInfo = TabBarController;
 		};
+		B2C65E001E67CAE000D78AC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0AFAD01D82B9D8000D21D9;
+			remoteInfo = QMUIKit;
+		};
 		B2F679C51E664EEA006A71F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */;
@@ -58,6 +68,20 @@
 			remoteInfo = QMUIKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2C65E021E67CAE000D78AC4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2C65DFF1E67CAE000D78AC4 /* QMUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B2677DCA1E654644006A8274 /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +102,10 @@
 		B2677DF61E6546C5006A8274 /* ZHLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHLTabBarController.h; sourceTree = "<group>"; };
 		B2677DF71E6546C5006A8274 /* ZHLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHLTabBarController.m; sourceTree = "<group>"; };
 		B2677DFB1E6546F4006A8274 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2B79FBD1E6CF9D200D11988 /* DSectionIndexItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSectionIndexItemView.h; sourceTree = "<group>"; };
+		B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSectionIndexItemView.m; sourceTree = "<group>"; };
+		B2B79FBF1E6CF9D200D11988 /* DSectionIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSectionIndexView.h; sourceTree = "<group>"; };
+		B2B79FC01E6CF9D200D11988 /* DSectionIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSectionIndexView.m; sourceTree = "<group>"; };
 		B2C65DF71E66985200D78AC4 /* CityData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityData.plist; sourceTree = "<group>"; };
 		B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = qmui.xcodeproj; path = QMUI/qmui.xcodeproj; sourceTree = "<group>"; };
 		B2F679D11E665730006A71F1 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
@@ -152,6 +180,7 @@
 		B2677DCC1E654644006A8274 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				B2B79FBC1E6CF9D200D11988 /* IndexView */,
 				B2F679F41E666421006A71F1 /* CityListSearch */,
 				B2677DFC1E65479A006A8274 /* Lib */,
 				B2677DD01E654644006A8274 /* AppDelegate.h */,
@@ -196,6 +225,17 @@
 				B2F679C01E664EE9006A71F1 /* qmui.xcodeproj */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		B2B79FBC1E6CF9D200D11988 /* IndexView */ = {
+			isa = PBXGroup;
+			children = (
+				B2B79FBF1E6CF9D200D11988 /* DSectionIndexView.h */,
+				B2B79FC01E6CF9D200D11988 /* DSectionIndexView.m */,
+				B2B79FBD1E6CF9D200D11988 /* DSectionIndexItemView.h */,
+				B2B79FBE1E6CF9D200D11988 /* DSectionIndexItemView.m */,
+			);
+			path = IndexView;
 			sourceTree = "<group>";
 		};
 		B2F679C11E664EE9006A71F1 /* Products */ = {
@@ -286,10 +326,12 @@
 				B2677DC61E654644006A8274 /* Sources */,
 				B2677DC71E654644006A8274 /* Frameworks */,
 				B2677DC81E654644006A8274 /* Resources */,
+				B2C65E021E67CAE000D78AC4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2C65E011E67CAE000D78AC4 /* PBXTargetDependency */,
 			);
 			name = TabBarController;
 			productName = TabBarController;
@@ -325,6 +367,7 @@
 				TargetAttributes = {
 					B2677DC91E654644006A8274 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6M9T6TBSKH;
 						ProvisioningStyle = Automatic;
 					};
 					B2677DE21E654644006A8274 = {
@@ -413,11 +456,13 @@
 				B2F679EA1E665730006A71F1 /* QDCommonGridViewController.m in Sources */,
 				B2F679F31E665730006A71F1 /* UIImageEffects.m in Sources */,
 				B2F679F21E665730006A71F1 /* QDUIHelper.m in Sources */,
+				B2B79FC21E6CF9D200D11988 /* DSectionIndexView.m in Sources */,
 				B2F679EB1E665730006A71F1 /* QDCommonGroupListViewController.m in Sources */,
 				B2677DCF1E654644006A8274 /* main.m in Sources */,
 				B2F679FA1E666597006A71F1 /* QDCityList.m in Sources */,
 				B2F679FD1E6666F8006A71F1 /* QDCityGroup.m in Sources */,
 				B2F679F11E665730006A71F1 /* QDCommonUI.m in Sources */,
+				B2B79FC11E6CF9D200D11988 /* DSectionIndexItemView.m in Sources */,
 				B2677DF91E6546C5006A8274 /* SetViewController.m in Sources */,
 				B2F679EF1E665730006A71F1 /* QDNavigationController.m in Sources */,
 				B2F679EE1E665730006A71F1 /* QDCommonViewController.m in Sources */,
@@ -441,6 +486,11 @@
 			isa = PBXTargetDependency;
 			target = B2677DC91E654644006A8274 /* TabBarController */;
 			targetProxy = B2677DE41E654644006A8274 /* PBXContainerItemProxy */;
+		};
+		B2C65E011E67CAE000D78AC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QMUIKit;
+			targetProxy = B2C65E001E67CAE000D78AC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,13 +606,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6M9T6TBSKH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBarController/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/TabBarController/Lib/QMUI/**";
 				INFOPLIST_FILE = TabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarController;
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarControllerzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -571,13 +621,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6M9T6TBSKH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBarController/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/TabBarController/Lib/QMUI/**";
 				INFOPLIST_FILE = TabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarController;
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.TabBarControllerzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
